@@ -1,10 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-function ToDo() {
+//import ReactDOM from 'react-dom'
+import todoData from './todoData'
+function ToDo(props) {
     return (
         <div className='todo-item'>
-            <input type='checkbox'></input>
-            <p>Place text here</p>
+            <input type="checkbox" checked={props.itemChecked} />
+            <p>{props.task}</p>
+            
         </div>
     )
 }
